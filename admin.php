@@ -8,7 +8,9 @@ echo "<body>";
 include ("headfile.html"); //include header layout file
 echo "<h4>".$pagename."</h4>"; //display name of the page on the web page
 
-
+echo "<form action=addNew.php method=post>";
+echo "<input type=submit value='Add New Vehical'>";
+echo "</form>";
 
 if(isset($_POST['vehicalId'])){
 	$vehicalRemove = $_POST['vehicalId'];			
